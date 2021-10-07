@@ -1,12 +1,13 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import '../patch-tvos-types.d';
+import Navigation from './navigation';
 
 const App: React.FC = () => {
-  return <View>
-    <Text>ABCD</Text>
-  </View>;
+  return <SafeAreaProvider>
+    <Navigation />
+  </SafeAreaProvider>;
 };
 
 export default App;
