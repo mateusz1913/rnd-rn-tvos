@@ -241,6 +241,33 @@ PODS:
     - React-cxxreact (= 0.64.2-2)
     - React-jsi (= 0.64.2-2)
     - React-perflogger (= 0.64.2-2)
+  - RNReanimated (2.2.2):
+    - DoubleConversion
+    - FBLazyVector
+    - FBReactNativeSpec
+    - glog
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React
+    - React-callinvoker
+    - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNScreens (3.8.0):
     - React-Core
     - React-RCTImage
@@ -275,6 +302,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -335,6 +363,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -368,6 +398,7 @@ SPEC CHECKSUMS:
   React-RCTText: aa98f3eb2a43c9b0fd7ea00c5d97409f8493636c
   React-runtimeexecutor: c609425af7a4fd1da7d549e81614487f702e5025
   ReactCommon: fe50c49bc90e5d242845cb534f88164868cba242
+  RNReanimated: be7d9e8e945619e2aa4aefe36b4fd65ebb473acc
   RNScreens: 6e1ea5787989f92b0671049b808aef64fa1ef98c
   Yoga: e6fb09105c0264e3ad22605d6b6fa2776e169518
 

@@ -6,6 +6,7 @@ export type RootStackParamList = {
   [ROUTES.FLATLIST]: undefined;
   [ROUTES.HOME]: undefined;
   [ROUTES.MODAL]: undefined;
+  [ROUTES.REANIMATED]: undefined;
   [ROUTES.SECTIONLIST]: undefined;
   [ROUTES.TEXTINPUT]: undefined;
   [ROUTES.TVEVENTHANDLER]: undefined;

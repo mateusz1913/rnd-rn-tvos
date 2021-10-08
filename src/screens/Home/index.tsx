@@ -50,6 +50,12 @@ const Home: React.FC = () => {
         }}
         title="TVEventHandler Example"
       />
+      <Button
+        onPress={() => {
+          navigation.navigate(ROUTES.REANIMATED);
+        }}
+        title="Reanimated Example"
+      />
     </ScrollView>
   </SafeAreaView>;
 };
