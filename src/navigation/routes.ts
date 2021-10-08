@@ -3,4 +3,6 @@ export const ROUTES = {
   HOME: 'HOME' as const,
   MODAL: 'MODAL' as const,
   SECTIONLIST: 'SECTIONLIST' as const,
+  TEXTINPUT: 'TEXTINPUT' as const,
+  TVEVENTHANDLER: 'TVEVENTHANDLER' as const,
 };

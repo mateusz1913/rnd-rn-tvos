@@ -1,4 +1,6 @@
-import { Platform } from 'react-native';
+import { PixelRatio, Platform } from 'react-native';
+
+const RATIO = PixelRatio.get();
 
 export const fontFamilies = {
   SANS_SERIF: Platform.select({
@@ -8,7 +10,10 @@ export const fontFamilies = {
 };
 
 export const fontSizes = {
-  SMALL: 36 as const,
-  MEDIUM: 48 as const,
-  LARGE: 60 as const,
+  /** 36 / RATIO */
+  SMALL: 36 / RATIO,
+  /** 48 / RATIO */
+  MEDIUM: 48 / RATIO,
+  /** 60 / RATIO */
+  LARGE: 60 / RATIO,
 };

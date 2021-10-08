@@ -7,6 +7,8 @@ export type RootStackParamList = {
   [ROUTES.HOME]: undefined;
   [ROUTES.MODAL]: undefined;
   [ROUTES.SECTIONLIST]: undefined;
+  [ROUTES.TEXTINPUT]: undefined;
+  [ROUTES.TVEVENTHANDLER]: undefined;
 };
 
 export type RootStackNavigationProp = NativeStackNavigationProp<RootStackParamList>;

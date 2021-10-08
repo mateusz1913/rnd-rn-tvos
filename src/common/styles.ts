@@ -25,7 +25,6 @@ export const commonStyles = StyleSheet.create({
   listItemButton: {
     alignItems: 'center',
     alignSelf: 'stretch',
-    backgroundColor: 'transparent',
     borderRadius: borderRadii.LARGE,
     elevation: 2.1,
     height: ITEM_SIZE,
@@ -38,8 +37,12 @@ export const commonStyles = StyleSheet.create({
     width: ITEM_SIZE,
     zIndex: 3,
   },
-  listItemButtonFocused: {
-    backgroundColor: 'rgba(0,0,0,0.3)',
+  overlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0,0,0,0.7)',
+  },
+  overlayFocused: {
+    backgroundColor: 'transparent',
   },
   screenContainer: {
     alignItems: 'center',

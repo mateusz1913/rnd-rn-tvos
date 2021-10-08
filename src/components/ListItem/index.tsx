@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBackground, Pressable } from 'react-native';
+import { ImageBackground, Pressable, View } from 'react-native';
 
 import { commonStyles } from '../../common/styles';
 
@@ -11,14 +11,16 @@ interface Props {
 const ListItem: React.FC<Props> = ({ imageUrl, isTVSelectable }) => {
   return <Pressable
     isTVSelectable={isTVSelectable}
-    style={({ focused } ) => [ commonStyles.listItemButton, focused && commonStyles.listItemButtonFocused ]}
+    style={commonStyles.listItemButton}
     tvParallaxProperties={{ magnification: 1.2, pressMagnification: 1.5 }}
   >
-    <ImageBackground
+    {({ focused }) => <ImageBackground
       imageStyle={commonStyles.listItemBackground}
       source={{ uri: imageUrl }}
       style={commonStyles.listItem}
-    />
+    >
+      <View style={[ commonStyles.overlay, focused && commonStyles.overlayFocused ]} />
+    </ImageBackground>}
   </Pressable>;
 };
 

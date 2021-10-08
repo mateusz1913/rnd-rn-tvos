@@ -18,6 +18,7 @@ const Home: React.FC = () => {
     <Header title="Home" />
     <ScrollView
       contentContainerStyle={styles.scrollContentContainer}
+      fadingEdgeLength={20}
       style={styles.scrollView}>
       <Button
         onPress={() => {
@@ -36,6 +37,18 @@ const Home: React.FC = () => {
           navigation.navigate(ROUTES.SECTIONLIST);
         }}
         title="SectionList Example"
+      />
+      <Button
+        onPress={() => {
+          navigation.navigate(ROUTES.TEXTINPUT);
+        }}
+        title="TextInput Example"
+      />
+      <Button
+        onPress={() => {
+          navigation.navigate(ROUTES.TVEVENTHANDLER);
+        }}
+        title="TVEventHandler Example"
       />
     </ScrollView>
   </SafeAreaView>;

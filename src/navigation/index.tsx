@@ -6,6 +6,8 @@ import FlatListExample from '../screens/FlatList';
 import Home from '../screens/Home';
 import ModalExample from '../screens/Modal';
 import SectionListExample from '../screens/SectionList';
+import TVEventHandlerExample from '../screens/TVEventHandler';
+import TextInputExample from '../screens/TextInput';
 
 import { ROUTES } from './routes';
 import type { RootStackParamList } from './types';
@@ -19,6 +21,8 @@ const Navigation: React.FC = () => {
       <Stack.Screen name={ROUTES.FLATLIST} component={FlatListExample} />
       <Stack.Screen name={ROUTES.MODAL} component={ModalExample} />
       <Stack.Screen name={ROUTES.SECTIONLIST} component={SectionListExample} />
+      <Stack.Screen name={ROUTES.TEXTINPUT} component={TextInputExample} />
+      <Stack.Screen name={ROUTES.TVEVENTHANDLER} component={TVEventHandlerExample} />
     </Stack.Navigator>
   </NavigationContainer>;
 };
