@@ -1,4 +1,6 @@
 export const ROUTES = {
+  ASYNCSTORAGE: 'ASYNCSTORAGE' as const,
+  FILEACCESS: 'FILEACCESS' as const,
   FLATLIST: 'FLATLIST' as const,
   HOME: 'HOME' as const,
   MODAL: 'MODAL' as const,
@@ -6,4 +8,5 @@ export const ROUTES = {
   SECTIONLIST: 'SECTIONLIST' as const,
   TEXTINPUT: 'TEXTINPUT' as const,
   TVEVENTHANDLER: 'TVEVENTHANDLER' as const,
+  VIDEO: 'VIDEO' as const,
 };

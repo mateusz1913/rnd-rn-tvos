@@ -38,7 +38,8 @@ const TVEventHandlerExample: React.FC = () => {
   return <SafeAreaView style={commonStyles.screenContainer}>
     <Header title="TVEventHandler" />
     {/** To trigger events on Android TV, there should be at least one focusable element on screen */}
-    <Pressable style={commonStyles.screenContainer}>
+    <Pressable style={commonStyles.emptyPressable} />
+    <View style={commonStyles.screenContainer}>
       <Text style={styles.event}>{tvEvent}</Text>
       <View style={styles.row}>
         <View style={styles.button} />
@@ -63,7 +64,7 @@ const TVEventHandlerExample: React.FC = () => {
         </View>
         <View style={styles.button} />
       </View>
-    </Pressable>
+    </View>
   </SafeAreaView>;
 };
 

@@ -52,9 +52,27 @@ const Home: React.FC = () => {
       />
       <Button
         onPress={() => {
+          navigation.navigate(ROUTES.ASYNCSTORAGE);
+        }}
+        title="Async Storage Example"
+      />
+      <Button
+        onPress={() => {
+          navigation.navigate(ROUTES.FILEACCESS);
+        }}
+        title="File Access Example"
+      />
+      <Button
+        onPress={() => {
           navigation.navigate(ROUTES.REANIMATED);
         }}
         title="Reanimated Example"
+      />
+      <Button
+        onPress={() => {
+          navigation.navigate(ROUTES.VIDEO);
+        }}
+        title="Video Example"
       />
     </ScrollView>
   </SafeAreaView>;

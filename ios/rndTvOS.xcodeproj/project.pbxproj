@@ -60,6 +60,8 @@
 		3BDF8C4CCF278F944E8C6CBF /* Pods-rndTvOS-tvOS-rndTvOS-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rndTvOS-tvOS-rndTvOS-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rndTvOS-tvOS-rndTvOS-tvOSTests/Pods-rndTvOS-tvOS-rndTvOS-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F21F13455730034D850CD1C /* libPods-rndTvOS-rndTvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rndTvOS-rndTvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rndTvOS/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		835337B627105FD2003EE4B2 /* rndTvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rndTvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		835337B727105FD2003EE4B2 /* rndTvOS-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rndTvOS-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		8DC2855AB2CCC04BED0978AE /* libPods-rndTvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rndTvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0216F1136BF7C90703C880F /* libPods-rndTvOS-tvOS-rndTvOS-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rndTvOS-tvOS-rndTvOS-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9A90FED9D09047497AB6D /* Pods-rndTvOS-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rndTvOS-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rndTvOS-tvOS/Pods-rndTvOS-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				835337B627105FD2003EE4B2 /* rndTvOS-Bridging-Header.h */,
+				835337B727105FD2003EE4B2 /* rndTvOS-tvOS-Bridging-Header.h */,
 			);
 			name = rndTvOS;
 			sourceTree = "<group>";
@@ -295,10 +299,11 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1300;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1300;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
@@ -708,6 +713,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rndTvOS;
+				SWIFT_OBJC_BRIDGING_HEADER = "rndTvOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -730,6 +736,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rndTvOS;
+				SWIFT_OBJC_BRIDGING_HEADER = "rndTvOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -742,6 +749,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -759,6 +767,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.rndTvOS-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "rndTvOS-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -771,6 +782,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -788,6 +800,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.rndTvOS-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "rndTvOS-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};

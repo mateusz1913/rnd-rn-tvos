@@ -8,6 +8,10 @@ import { theme } from './theme';
 const ITEM_SIZE = TILE_SIZE - 2 * margins.MEDIUM;
 
 export const commonStyles = StyleSheet.create({
+  emptyPressable: {
+    height: 1,
+    width: 1,
+  },
   listItem: {
     alignItems: 'center',
     borderRadius: borderRadii.LARGE,
